@@ -1,0 +1,20 @@
+title New Note 
+
+note over browser:
+new note added and submit is pressed
+end note 
+
+browser->server: HTTP 201 https://studies.cs.helsinki.fi/exampleapp/spa.js
+
+
+note over server:
+the server sends the json data
+end note
+
+server-->browser: [{ content: "new single page note", date: "2022-10-23" }, ...]
+
+note over browser:
+browser executes the event handler
+that renders notes to display
+end note
+
